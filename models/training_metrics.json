@@ -1,0 +1,69 @@
+{
+  "model_type": "RandomForestRegressor",
+  "training_date": "2025-12-08T12:47:41.285118",
+  "data_points": 3198,
+  "features_count": 107,
+  "districts": 39,
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "cross_validation": {
+    "splits": 5,
+    "type": "TimeSeriesSplit",
+    "train_mae": 78603.95279102879,
+    "val_mae": 133960.1688318615,
+    "train_rmse": 122217.21355147798,
+    "val_rmse": 271288.35920575785,
+    "train_r2": 0.9740460665295656,
+    "val_r2": 0.8635984833940347,
+    "val_mape": 0.11534005462171967
+  },
+  "top_features": [
+    {
+      "feature": "consumption_roll_3m",
+      "importance": 0.43632118869853465
+    },
+    {
+      "feature": "consumption_lag_1m",
+      "importance": 0.38889682013917837
+    },
+    {
+      "feature": "monthly_calls",
+      "importance": 0.10639843267815745
+    },
+    {
+      "feature": "Kazandere_occ_monthly",
+      "importance": 0.002523318027942174
+    },
+    {
+      "feature": "SISLI_dam_occ_avg",
+      "importance": 0.002448338830580089
+    },
+    {
+      "feature": "GAZIOSMANPASA_dam_occ_avg",
+      "importance": 0.002121375989989178
+    },
+    {
+      "feature": "KAGITHANE_dam_occ_avg",
+      "importance": 0.001985319105164831
+    },
+    {
+      "feature": "Elmali_occ_monthly",
+      "importance": 0.0019337700624247982
+    },
+    {
+      "feature": "Pabucdere_occ_monthly",
+      "importance": 0.0019036292881591476
+    },
+    {
+      "feature": "ARNAVUTKOY_dam_occ_avg",
+      "importance": 0.0018828164574180757
+    }
+  ]
+}

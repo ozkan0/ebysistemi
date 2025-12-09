@@ -1,0 +1,224 @@
+{
+  "ADALAR": [
+    "Omerli",
+    "Darlik"
+  ],
+  "ARNAVUTKOY": [
+    "Terkos",
+    "Sazlidere",
+    "Alibey",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "ATASEHIR": [
+    "Omerli",
+    "Darlik"
+  ],
+  "AVCILAR": [
+    "Sazlidere",
+    "Terkos",
+    "Buyukcekmece"
+  ],
+  "BAGCILAR": [
+    "Terkos",
+    "Sazlidere",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "BAHCELIEVLER": [
+    "Terkos",
+    "Sazlidere",
+    "Omerli",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "BAKIRKOY": [
+    "Terkos",
+    "Sazlidere",
+    "Omerli",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "BASAKSEHIR": [
+    "Sazlidere",
+    "Terkos",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "BAYRAMPASA": [
+    "Terkos",
+    "Alibey",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "BESIKTAS": [
+    "Terkos",
+    "Alibey",
+    "Omerli",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "BEYKOZ": [
+    "Elmali",
+    "Omerli",
+    "Darlik"
+  ],
+  "BEYLIKDUZU": [
+    "Buyukcekmece"
+  ],
+  "BEYOGLU": [
+    "Terkos",
+    "Alibey",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "BUYUKCEKMECE": [
+    "Buyukcekmece"
+  ],
+  "CATALCA": [
+    "Buyukcekmece",
+    "Terkos"
+  ],
+  "CEKMEKOY": [
+    "Omerli",
+    "Darlik"
+  ],
+  "ESENLER": [
+    "Terkos",
+    "Sazlidere",
+    "Alibey",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "ESENYURT": [
+    "Buyukcekmece",
+    "Terkos",
+    "Sazlidere"
+  ],
+  "EYUPSULTAN": [
+    "Alibey",
+    "Terkos",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "FATIH": [
+    "Terkos",
+    "Alibey",
+    "Omerli",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "GAZIOSMANPASA": [
+    "Alibey",
+    "Terkos",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "GUNGOREN": [
+    "Terkos",
+    "Sazlidere",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "KADIKOY": [
+    "Omerli",
+    "Darlik"
+  ],
+  "KAGITHANE": [
+    "Terkos",
+    "Alibey",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "KARTAL": [
+    "Omerli",
+    "Darlik"
+  ],
+  "KUCUKCEKMECE": [
+    "Sazlidere",
+    "Terkos",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "MALTEPE": [
+    "Omerli",
+    "Darlik"
+  ],
+  "PENDIK": [
+    "Omerli",
+    "Darlik"
+  ],
+  "SANCAKTEPE": [
+    "Omerli",
+    "Darlik"
+  ],
+  "SARIYER": [
+    "Terkos",
+    "Alibey",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "SILIVRI": [
+    "Buyukcekmece"
+  ],
+  "SULTANBEYLI": [
+    "Omerli",
+    "Darlik"
+  ],
+  "SULTANGAZI": [
+    "Alibey",
+    "Terkos",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "SILE": [
+    "Darlik",
+    "Omerli"
+  ],
+  "SISLI": [
+    "Terkos",
+    "Alibey",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ],
+  "TUZLA": [
+    "Omerli",
+    "Darlik"
+  ],
+  "UMRANIYE": [
+    "Omerli",
+    "Darlik",
+    "Elmali"
+  ],
+  "USKUDAR": [
+    "Omerli",
+    "Darlik",
+    "Elmali"
+  ],
+  "ZEYTINBURNU": [
+    "Terkos",
+    "Sazlidere",
+    "Omerli",
+    "Kazandere",
+    "Pabucdere",
+    "Istrancalar"
+  ]
+}

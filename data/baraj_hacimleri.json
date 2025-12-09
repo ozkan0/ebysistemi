@@ -1,0 +1,15 @@
+{
+  "fields": [{"id":"_id","type":"int"},{"id":"Baraj","type":"text","info":{"type_override":"text","notes":"","label":"dam"}},{"id":"Maksimum Biriktirme Hacmi (m3)","type":"numeric","info":{"notes":"","type_override":"numeric","label":"Maximum Spool Volume"}}],
+  "records": [
+    [1,"Omerli",235371000],
+    [2,"Darlik",107500000],
+    [3,"Elmali",9600000],
+    [4,"Terkos",162241000],
+    [6,"Buyukcekmece",148943000],
+    [7,"Sazlidere",88730000],
+    [5,"Alibey",34143000],
+    [9,"Kazandere",17424000],
+    [10,"Pabucdere",58500000],
+    [8,"Istrancalar",6231000]
+  ]
+}

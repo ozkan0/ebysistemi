@@ -1,0 +1,46 @@
+{
+  "today_date": "2025-12-08",
+  "today_stats": {
+    "Omerli": {
+      "capacity_m3": 244540000,
+      "occupancy_pct": 13.11
+    },
+    "Darlik": {
+      "capacity_m3": 102463000,
+      "occupancy_pct": 27.65
+    },
+    "Elmali": {
+      "capacity_m3": 9600000,
+      "occupancy_pct": 50.68
+    },
+    "Terkos": {
+      "capacity_m3": 195974000,
+      "occupancy_pct": 19.23
+    },
+    "Alibey": {
+      "capacity_m3": 34143000,
+      "occupancy_pct": 10.1
+    },
+    "Buyukcekmece": {
+      "capacity_m3": 129892000,
+      "occupancy_pct": 18.46
+    },
+    "Sazlidere": {
+      "capacity_m3": 88730000,
+      "occupancy_pct": 16.87
+    },
+    "Istrancalar": {
+      "capacity_m3": 6231000,
+      "occupancy_pct": 30.84
+    },
+    "Kazandere": {
+      "capacity_m3": 21096000,
+      "occupancy_pct": 2.3
+    },
+    "Pabucdere": {
+      "capacity_m3": 35222000,
+      "occupancy_pct": 2.41
+    }
+  },
+  "general_occupancy": 17.12
+}

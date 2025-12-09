@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "district": "ADALAR",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 2,
+    "district": "ARNAVUTKOY",
+    "connected_dams": "Terkos, Sazlidere, Alibey, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 3,
+    "district": "ATASEHIR",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 4,
+    "district": "AVCILAR",
+    "connected_dams": "Sazlidere, Terkos, Buyukcekmece"
+  },
+  {
+    "id": 5,
+    "district": "BAGCILAR",
+    "connected_dams": "Terkos, Sazlidere, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 6,
+    "district": "BAHCELIEVLER",
+    "connected_dams": "Terkos, Sazlidere, Omerli, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 7,
+    "district": "BAKIRKOY",
+    "connected_dams": "Terkos, Sazlidere, Omerli, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 8,
+    "district": "BASAKSEHIR",
+    "connected_dams": "Sazlidere, Terkos, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 9,
+    "district": "BAYRAMPASA",
+    "connected_dams": "Terkos, Alibey, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 10,
+    "district": "BESIKTAS",
+    "connected_dams": "Terkos, Alibey, Omerli, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 11,
+    "district": "BEYKOZ",
+    "connected_dams": "Elmali, Omerli, Darlik"
+  },
+  {
+    "id": 12,
+    "district": "BEYLIKDUZU",
+    "connected_dams": "Buyukcekmece"
+  },
+  {
+    "id": 13,
+    "district": "BEYOGLU",
+    "connected_dams": "Terkos, Alibey, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 14,
+    "district": "BUYUKCEKMECE",
+    "connected_dams": "Buyukcekmece"
+  },
+  {
+    "id": 15,
+    "district": "CATALCA",
+    "connected_dams": "Buyukcekmece, Terkos"
+  },
+  {
+    "id": 16,
+    "district": "CEKMEKOY",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 17,
+    "district": "ESENLER",
+    "connected_dams": "Terkos, Sazlidere, Alibey, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 18,
+    "district": "ESENYURT",
+    "connected_dams": "Buyukcekmece, Terkos, Sazlidere"
+  },
+  {
+    "id": 19,
+    "district": "EYUPSULTAN",
+    "connected_dams": "Alibey, Terkos, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 20,
+    "district": "FATIH",
+    "connected_dams": "Terkos, Alibey, Omerli, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 21,
+    "district": "GAZIOSMANPASA",
+    "connected_dams": "Alibey, Terkos, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 22,
+    "district": "GUNGOREN",
+    "connected_dams": "Terkos, Sazlidere, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 23,
+    "district": "KADIKOY",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 24,
+    "district": "KAGITHANE",
+    "connected_dams": "Terkos, Alibey, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 25,
+    "district": "KARTAL",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 26,
+    "district": "KUCUKCEKMECE",
+    "connected_dams": "Sazlidere, Terkos, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 27,
+    "district": "MALTEPE",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 28,
+    "district": "PENDIK",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 29,
+    "district": "SANCAKTEPE",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 30,
+    "district": "SARIYER",
+    "connected_dams": "Terkos, Alibey, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 31,
+    "district": "SILIVRI",
+    "connected_dams": "Buyukcekmece"
+  },
+  {
+    "id": 32,
+    "district": "SULTANBEYLI",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 33,
+    "district": "SULTANGAZI",
+    "connected_dams": "Alibey, Terkos, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 34,
+    "district": "SILE",
+    "connected_dams": "Darlik, Omerli"
+  },
+  {
+    "id": 35,
+    "district": "SISLI",
+    "connected_dams": "Terkos, Alibey, Kazandere, Pabucdere, Istrancalar"
+  },
+  {
+    "id": 36,
+    "district": "TUZLA",
+    "connected_dams": "Omerli, Darlik"
+  },
+  {
+    "id": 37,
+    "district": "UMRANIYE",
+    "connected_dams": "Omerli, Darlik, Elmali"
+  },
+  {
+    "id": 38,
+    "district": "USKUDAR",
+    "connected_dams": "Omerli, Darlik, Elmali"
+  },
+  {
+    "id": 39,
+    "district": "ZEYTINBURNU",
+    "connected_dams": "Terkos, Sazlidere, Omerli, Kazandere, Pabucdere, Istrancalar"
+  }
+]

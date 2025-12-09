@@ -1,0 +1,2182 @@
+{
+  "generated_at": "2025-12-08T12:47:51.155007",
+  "forecast_date": "2025-12-08",
+  "general_occupancy_pct": 17.12,
+  "dam_status": {
+    "Omerli": {
+      "capacity_m3": 244540000,
+      "occupancy_pct": 13.11
+    },
+    "Darlik": {
+      "capacity_m3": 102463000,
+      "occupancy_pct": 27.65
+    },
+    "Elmali": {
+      "capacity_m3": 9600000,
+      "occupancy_pct": 50.68
+    },
+    "Terkos": {
+      "capacity_m3": 195974000,
+      "occupancy_pct": 19.23
+    },
+    "Alibey": {
+      "capacity_m3": 34143000,
+      "occupancy_pct": 10.1
+    },
+    "Buyukcekmece": {
+      "capacity_m3": 129892000,
+      "occupancy_pct": 18.46
+    },
+    "Sazlidere": {
+      "capacity_m3": 88730000,
+      "occupancy_pct": 16.87
+    },
+    "Istrancalar": {
+      "capacity_m3": 6231000,
+      "occupancy_pct": 30.84
+    },
+    "Kazandere": {
+      "capacity_m3": 21096000,
+      "occupancy_pct": 2.3
+    },
+    "Pabucdere": {
+      "capacity_m3": 35222000,
+      "occupancy_pct": 2.41
+    }
+  },
+  "districts": [
+    {
+      "name": "ADALAR",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 372598,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 326061,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 335060,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 354719,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 355331,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 369436,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 332252,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "ARNAVUTKOY",
+      "connected_dams": [
+        "Terkos",
+        "Sazlidere",
+        "Alibey",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.56,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 333913,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 335502,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 356284,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 352703,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 356957,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 342606,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 344805,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "ATASEHIR",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 349906,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 340215,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 359475,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 367427,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 372357,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 341368,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 317766,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "AVCILAR",
+      "connected_dams": [
+        "Sazlidere",
+        "Terkos",
+        "Buyukcekmece"
+      ],
+      "occupancy_pct": 18.48,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 346721,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 381245,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 373997,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 350877,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 360073,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 371909,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 350980,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BAGCILAR",
+      "connected_dams": [
+        "Terkos",
+        "Sazlidere",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 16.1,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 345990,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 328797,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 335258,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 373914,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 342293,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 357456,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 371917,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BAHCELIEVLER",
+      "connected_dams": [
+        "Terkos",
+        "Sazlidere",
+        "Omerli",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 14.86,
+      "status": "CRITICAL",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 347487,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 347533,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 353364,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 339088,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 346333,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 357489,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 329946,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BAKIRKOY",
+      "connected_dams": [
+        "Terkos",
+        "Sazlidere",
+        "Omerli",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 14.86,
+      "status": "CRITICAL",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 365933,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 351119,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 343877,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 366820,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 341640,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 326501,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 327724,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BASAKSEHIR",
+      "connected_dams": [
+        "Sazlidere",
+        "Terkos",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 16.1,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 325245,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 353427,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 350121,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 332606,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 333325,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 328459,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 317018,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BAYRAMPASA",
+      "connected_dams": [
+        "Terkos",
+        "Alibey",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 351987,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 376330,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 344149,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 369176,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 355434,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 358011,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 334152,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BESIKTAS",
+      "connected_dams": [
+        "Terkos",
+        "Alibey",
+        "Omerli",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 14.23,
+      "status": "CRITICAL",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 343841,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 374708,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 349335,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 378334,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 341661,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 342121,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 346406,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BEYKOZ",
+      "connected_dams": [
+        "Elmali",
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 18.3,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 335119,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 339382,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 384672,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 391828,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 345021,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 368787,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 391953,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BEYLIKDUZU",
+      "connected_dams": [
+        "Buyukcekmece"
+      ],
+      "occupancy_pct": 18.46,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 352622,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 351470,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 370997,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 295726,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 341395,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 334964,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 345372,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BEYOGLU",
+      "connected_dams": [
+        "Terkos",
+        "Alibey",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 356049,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 365700,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 343627,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 339605,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 356676,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 352239,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 331912,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "BUYUKCEKMECE",
+      "connected_dams": [
+        "Buyukcekmece"
+      ],
+      "occupancy_pct": 18.46,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 316513,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 371511,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 352635,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 353405,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 340649,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 334182,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 383847,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "CATALCA",
+      "connected_dams": [
+        "Buyukcekmece",
+        "Terkos"
+      ],
+      "occupancy_pct": 18.92,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 340341,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 337725,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 318297,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 351949,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 360079,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 355273,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 317847,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "CEKMEKOY",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 406212,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 366334,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 302344,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 324539,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 360225,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 330844,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 354519,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "ESENLER",
+      "connected_dams": [
+        "Terkos",
+        "Sazlidere",
+        "Alibey",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.56,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 351537,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 373266,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 351806,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 345242,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 335992,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 346871,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 358034,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "ESENYURT",
+      "connected_dams": [
+        "Buyukcekmece",
+        "Terkos",
+        "Sazlidere"
+      ],
+      "occupancy_pct": 18.48,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 340583,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 341776,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 335190,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 369941,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 353997,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 342638,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 346281,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "EYUPSULTAN",
+      "connected_dams": [
+        "Alibey",
+        "Terkos",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 321983,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 343637,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 358869,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 347987,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 321720,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 368125,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 325006,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "FATIH",
+      "connected_dams": [
+        "Terkos",
+        "Alibey",
+        "Omerli",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 14.23,
+      "status": "CRITICAL",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 315938,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 358566,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 363612,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 357191,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 330174,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 364080,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 335312,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "GAZIOSMANPASA",
+      "connected_dams": [
+        "Alibey",
+        "Terkos",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 363873,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 349954,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 356913,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 357067,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 366081,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 359741,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 361955,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "GUNGOREN",
+      "connected_dams": [
+        "Terkos",
+        "Sazlidere",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 16.1,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 334818,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 375674,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 313826,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 347659,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 324861,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 353599,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 359962,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "KADIKOY",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 347598,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 355349,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 373108,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 352071,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 364650,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 377908,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 353618,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "KAGITHANE",
+      "connected_dams": [
+        "Terkos",
+        "Alibey",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 359909,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 326268,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 341052,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 354647,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 355507,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 314714,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 395095,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "KARTAL",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 361739,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 361709,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 332401,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 372080,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 356850,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 370210,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 365873,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "KUCUKCEKMECE",
+      "connected_dams": [
+        "Sazlidere",
+        "Terkos",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 16.1,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 370440,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 352038,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 357726,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 334953,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 373544,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 362502,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 369590,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "MALTEPE",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 379613,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 326730,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 354839,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 342806,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 357910,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 358162,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 344673,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "PENDIK",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 349635,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 338887,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 352332,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 316531,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 330819,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 348960,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 356432,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "SANCAKTEPE",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 377023,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 332250,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 348025,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 383722,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 342201,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 369949,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 360032,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "SARIYER",
+      "connected_dams": [
+        "Terkos",
+        "Alibey",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 366530,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 331658,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 353292,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 362942,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 348640,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 337660,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 345528,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "SILE",
+      "connected_dams": [
+        "Darlik",
+        "Omerli"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 359083,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 330429,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 369038,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 347977,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 315368,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 339574,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 366021,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "SILIVRI",
+      "connected_dams": [
+        "Buyukcekmece"
+      ],
+      "occupancy_pct": 18.46,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 316747,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 321770,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 329681,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 356334,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 356148,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 351287,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 361035,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "SISLI",
+      "connected_dams": [
+        "Terkos",
+        "Alibey",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 369862,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 338413,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 354485,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 373062,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 342822,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 346646,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 359592,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "SULTANBEYLI",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 348385,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 339519,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 354024,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 354058,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 320608,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 361585,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 329689,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "SULTANGAZI",
+      "connected_dams": [
+        "Alibey",
+        "Terkos",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 15.17,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 356591,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 374033,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 336113,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 331390,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 361657,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 372789,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 338280,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "TUZLA",
+      "connected_dams": [
+        "Omerli",
+        "Darlik"
+      ],
+      "occupancy_pct": 17.4,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 321563,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 362931,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 346014,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 371039,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 373001,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 346106,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 349208,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "UMRANIYE",
+      "connected_dams": [
+        "Omerli",
+        "Darlik",
+        "Elmali"
+      ],
+      "occupancy_pct": 18.3,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 392349,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 365525,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 329989,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 343778,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 355225,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 349086,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 317157,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "USKUDAR",
+      "connected_dams": [
+        "Omerli",
+        "Darlik",
+        "Elmali"
+      ],
+      "occupancy_pct": 18.3,
+      "status": "WARNING",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 363712,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 328442,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 332925,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 351390,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 349194,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 377455,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 339510,
+          "weekly_average": 2450000
+        }
+      ]
+    },
+    {
+      "name": "ZEYTINBURNU",
+      "connected_dams": [
+        "Terkos",
+        "Sazlidere",
+        "Omerli",
+        "Kazandere",
+        "Pabucdere",
+        "Istrancalar"
+      ],
+      "occupancy_pct": 14.86,
+      "status": "CRITICAL",
+      "seven_day_forecast": [
+        {
+          "date": "2025-12-08",
+          "day_of_week": "Monday",
+          "daily_consumption_m3": 325034,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-09",
+          "day_of_week": "Tuesday",
+          "daily_consumption_m3": 345079,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-10",
+          "day_of_week": "Wednesday",
+          "daily_consumption_m3": 373537,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-11",
+          "day_of_week": "Thursday",
+          "daily_consumption_m3": 357080,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-12",
+          "day_of_week": "Friday",
+          "daily_consumption_m3": 353855,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-13",
+          "day_of_week": "Saturday",
+          "daily_consumption_m3": 349534,
+          "weekly_average": 2450000
+        },
+        {
+          "date": "2025-12-14",
+          "day_of_week": "Sunday",
+          "daily_consumption_m3": 357673,
+          "weekly_average": 2450000
+        }
+      ]
+    }
+  ]
+}

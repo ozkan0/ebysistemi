@@ -171,7 +171,7 @@ const dictionary = {
   },
   tr: {
     sidebar: { title: "EBYS", subtitle: "KARAR DESTEK SİSTEMİ", dash: "Denetim Paneli", pred: "Tahminler", dist: "Bölgesel Analiz", docs: "Kılavuz", crit: "Sistem Kritik" },
-    header: { system_avg: "Sistem Ortalaması", sub_title: "Etkili Baraj Yönetim Sistemi" },
+    header: { system_avg: "Sistem Ortalaması", sub_title: "Efektif Baraj Yönetim Sistemi" },
     dashboard: { 
       monitored: "İzlenen Barajlar", 
       analytics: "Sistem Analizi", 

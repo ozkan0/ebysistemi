@@ -1,0 +1,23 @@
+{
+  "fields": [{"id":"_id","type":"int"},{"id":"Tarih","type":"text","info":{"notes":"","type_override":"text","label":"Tarih / Date"}},{"id":"Omerli","type":"text","info":{"type_override":"text","notes":"","label":"Omerli Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Omerli Dam (%)"}},{"id":"Darlik","type":"text","info":{"type_override":"text","notes":"","label":"Darlik Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Darlik Dam (%)"}},{"id":"Elmali","type":"text","info":{"type_override":"text","notes":"","label":"Elmali Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Elmali Dam (%)"}},{"id":"Terkos","type":"text","info":{"type_override":"text","notes":"","label":"Terkos Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Terkos Dam (%)"}},{"id":"Buyukcekmece","type":"text","info":{"type_override":"text","notes":"","label":"Buyukcekmece Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Buyukcekmece Dam (%)"}},{"id":"Sazlidere","type":"text","info":{"type_override":"text","notes":"","label":"Sazlidere Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Sazlidere Dam (%)"}},{"id":"Alibey","type":"text","info":{"notes":"","type_override":"text","label":"Alibey Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Alibey Dam (%)"}},{"id":"Kazandere","type":"text","info":{"notes":"","type_override":"text","label":"Kazandere Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Kazandere Dam (%)"}},{"id":"Pabucdere","type":"text","info":{"type_override":"text","notes":"","label":"Pabucdere Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Pabucdere Dam (%)"}},{"id":"Istrancalar","type":"text","info":{"notes":"","type_override":"text","label":"Istrancalar Barajina Dusen Gunluk Yagis Orani (%) / Daily Precipitation Rate on Istrancalar Dam (%)"}}],
+  "records": [
+    [1462,"2015-01-01 00:00:00","5.18","14.76","2.03","0.99","0.0","0.0","0.0","0.0","0.0","0.61"],
+    [1463,"2015-01-02 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1464,"2015-01-03 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1465,"2015-01-04 00:00:00","16.4","22.09","14.48","8.19","4.14","0.86","9.55","0.45","0.6","1.25"],
+    [1466,"2015-01-05 00:00:00","2.03","0.9","0.46","3.52","5.1","0.0","0.0","1.04","1.31","1.17"],
+    [1467,"2015-01-06 00:00:00","7.18","2.14","2.09","0.68","0.0","1.03","1.56","0.0","0.0","0.0"],
+    [1468,"2015-01-07 00:00:00","0.0","2.43","0.0","0.0","0.0","0.0","4.2","0.0","0.0","0.0"],
+    [1469,"2015-01-08 00:00:00","0.0","3.83","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1470,"2015-01-09 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1471,"2015-01-10 00:00:00","5.4","5.63","7.31","2.28","4.5","3.0","5.79","0.0","0.0","0.0"],
+    [1472,"2015-01-11 00:00:00","2.03","3.91","0.79","13.19","0.0","0.5","1.06","16.03","17.02","9.62"],
+    [1473,"2015-01-12 00:00:00","38.08","46.98","37.64","20.79","21.37","20.24","33.91","15.42","15.72","17.46"],
+    [1474,"2015-01-13 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1475,"2015-01-14 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1476,"2015-01-15 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1477,"2015-01-16 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1478,"2015-01-17 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+    [1479,"2015-01-18 00:00:00","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"]
+	]
+}

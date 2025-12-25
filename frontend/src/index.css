@@ -1,4 +1,3 @@
-/* Import JetBrains Mono with Turkish Support (Latin Extended) */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&subset=latin-ext&display=swap');
 
 @tailwind base;
@@ -6,19 +5,14 @@
 @tailwind utilities;
 
 body {
-  /* Force JetBrains Mono globally */
   font-family: 'JetBrains Mono', monospace;
   
-  /* Background match */
   background-color: #020617; 
   color: #e2e8f0;
   
-  /* Font smoothing */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Custom Scrollbar (Kept from previous step) */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

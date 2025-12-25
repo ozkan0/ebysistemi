@@ -58,14 +58,16 @@ interface ConsumptionData {
 
 interface Recommendation {
   action: string;
+  title?: string;
+  sub_title?: string;
   priority: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
-  reason: string;
   details: {
     duration: string;
-    scope: string;
     days_gained: number;
     retention_30d: number;
     vol_saved_m3: number;
+    risk_label?: string;
+    support_label?: string;
   }
 }
 
@@ -124,6 +126,8 @@ const dictionary = {
       cap_dist: "Reservoir Capacity Distribution", 
       total: "Total", 
       dist_cons: "District Consumption (m³/day)",
+      show_all: "Show All",
+      show_less: "Show Top 10",
       connected: "connected",
       days_safe: "days safe"
     },
@@ -175,9 +179,11 @@ const dictionary = {
     dashboard: { 
       monitored: "İzlenen Barajlar", 
       analytics: "Sistem Analizi", 
-      cap_dist: "Baraj Doluluk Dağılımı", 
+      cap_dist: "Baraj Hacimleri", 
       total: "Toplam", 
-      dist_cons: "İlçe Tüketimi (m³/gün)",
+      dist_cons: "İlçe Bazında Tüketim (m³/gün)",
+      show_all: "Tümünü Göster",
+      show_less: "İlk 10'u Göster",
       connected: "bağlı ilçe",
       days_safe: "gün güvenli"
     },
@@ -227,40 +233,7 @@ const dictionary = {
 
 const translateBackendText = (text: string, lang: 'tr' | 'en') => {
   if (lang === 'en') return text;
-  
-  const map: {[key: string]: string} = {
-    "CUT WATER 20%": "SU KESİNTİSİ %20",
-    "INDUSTRIAL CUTOFF": "SANAYİ KESİNTİSİ",
-    "24H PRESSURE THROTTLING": "24S BASINÇ DÜŞÜRME",
-    "NIGHTLY PRESSURE DROP": "GECE BASINÇ DÜŞÜRME",
-    "ACTIVATE BACKUP WELLS": "YEDEK KUYULARI AÇ",
-    "ROTATIONAL ZONING": "DÖNÜŞÜMLÜ KESİNTİ",
-    "72H SYSTEM CUTOFF": "72S SİSTEM KAPATMA",
-    "PRESSURE REDUCTION": "BASINÇ AZALTMA",
-    
-    "Next 30 Days": "Gelecek 30 Gün",
-    "Indefinite": "Süresiz",
-    "Continuous": "Sürekli",
-    "Residential": "Konutlar",
-    "Industrial Zones": "Sanayi Bölgeleri",
-    "Infrastructure": "Altyapı",
-    "Daily": "Günlük",
-    "General Rationing": "Genel Kısıtlama",
-    "Target High-Volume Zones": "Yüksek Hacimli Bölgeler",
-    "Minimize Pipe Flow": "Boru Akışını Minimize Et",
-    "Leak Minimization": "Kaçak Önleme",
-    "Supplement Supply": "Arz Takviyesi",
-    "Supply Extension": "Arz Uzatma",
-    "Emergency Halt": "Acil Durdurma",
-    "Total Stoppage": "Tam Durdurma",
-    "1 Day/Week Cutoff": "Haftada 1 Gün Kesinti",
-    "District Rotation": "İlçe Dönüşümü",
-    "4 Days / Month": "Ayda 4 Gün",
-    "Daily Operation": "Günlük Operasyon",
-    "Groundwater": "Yeraltı Suyu"
-  };
-
-  return map[text] || text;
+  return text; 
 };
 
 export default function App() {
@@ -274,8 +247,8 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState<'dashboard' | 'predictions' | 'districts' | 'docs'>('dashboard');
   
+  const [showAllConsumption, setShowAllConsumption] = useState(false);
   const [lang, setLang] = useState<'tr' | 'en'>('tr'); 
-  
   const [selectedRecommendation, setSelectedRecommendation] = useState<Recommendation | null>(null);
   const [projectedOccupancy, setProjectedOccupancy] = useState<number | null>(null);
 
@@ -314,9 +287,7 @@ export default function App() {
       setDamDetail(response.data);
       const rec = response.data.recommendations[0];
       if (rec) {
-         setSelectedRecommendation(rec);
-         const projected = Math.min(response.data.occupancy_pct + rec.details.retention_30d, 100);
-         setProjectedOccupancy(projected);
+         calculateProjectedEffect(rec, response.data);
       } else {
          setSelectedRecommendation(null);
          setProjectedOccupancy(null);
@@ -330,13 +301,13 @@ export default function App() {
     setProjectedOccupancy(null);
   };
 
-  const calculateProjectedEffect = (recommendation: Recommendation) => {
-    if (!damDetail) return;
-    setProjectedOccupancy(Math.min(damDetail.occupancy_pct + recommendation.details.retention_30d, 100));
+  const calculateProjectedEffect = (recommendation: Recommendation, detailData = damDetail) => {
+    if (!detailData) return;
+    setProjectedOccupancy(Math.min(detailData.occupancy_pct + recommendation.details.retention_30d, 100));
     setSelectedRecommendation(recommendation);
   };
 
-  // --- CHARTS ---
+  // --- CHARTS & HELPERS ---
   const getForecastChartData = () => {
     if (!occupancyForecast) return { labels: [], datasets: [] };
     const datasets = Object.keys(occupancyForecast.dams).map((damName) => {
@@ -393,14 +364,15 @@ export default function App() {
 
   const getConsumptionChartData = () => {
     if (!topConsumption.length) return { labels: [], datasets: [] };
+    const dataToDisplay = showAllConsumption ? topConsumption : topConsumption.slice(0, 10);
     return {
-      labels: topConsumption.map(d => d.district_name),
+      labels: dataToDisplay.map(d => d.district_name),
       datasets: [{
         label: dictionary[lang].dashboard.dist_cons,
-        data: topConsumption.map(d => d.avg_daily_m3),
+        data: dataToDisplay.map(d => d.avg_daily_m3),
         backgroundColor: '#3b82f6',
         borderRadius: 4,
-        barThickness: 20
+        barThickness: showAllConsumption ? 8 : 20
       }]
     };
   };
@@ -412,7 +384,7 @@ export default function App() {
     plugins: { legend: { display: false } },
     scales: {
       x: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' } },
-      y: { grid: { display: false }, ticks: { color: '#cbd5e1', font: { size: 11 } } }
+      y: { grid: { display: false }, ticks: { color: '#cbd5e1', font: { size: showAllConsumption ? 9 : 11 } } }
     }
   };
 
@@ -452,9 +424,6 @@ export default function App() {
     <div className="min-h-screen bg-slate-950 flex font-sans text-slate-200">
       <aside className="w-64 bg-slate-950 border-r border-slate-800 flex flex-col fixed h-full z-20">
         <div className="p-6 border-b border-slate-800 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20">
-            <span className="text-white font-bold text-2xl font-mono">E</span>
-          </div>
           <div>
             <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 font-mono tracking-tighter">{t.sidebar.title}</h1>
             <p className="text-[9px] text-slate-500 font-bold tracking-widest">{t.sidebar.subtitle}</p>
@@ -556,9 +525,12 @@ export default function App() {
                       </div>
                    </div>
                    <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 h-[400px] flex flex-col">
-                      <h4 className="text-sm font-bold text-slate-400 mb-4 uppercase">{t.dashboard.dist_cons}</h4>
+                      <div className="flex justify-between items-center mb-4">
+                         <h4 className="text-sm font-bold text-slate-400 uppercase">{t.dashboard.dist_cons}</h4>
+                         <button onClick={() => setShowAllConsumption(!showAllConsumption)} className="text-[10px] bg-slate-800 hover:bg-slate-700 text-blue-400 px-3 py-1 rounded transition-colors font-bold uppercase tracking-wide border border-slate-700">{showAllConsumption ? t.dashboard.show_less : t.dashboard.show_all}</button>
+                      </div>
                       <div className="flex-1 overflow-y-auto custom-scrollbar pr-2">
-                         <div className="h-[1200px]"><Bar data={getConsumptionChartData()} options={consumptionOptions} /></div>
+                         <div className={showAllConsumption ? "h-[1200px]" : "h-full"}><Bar data={getConsumptionChartData()} options={consumptionOptions} /></div>
                       </div>
                    </div>
                 </div>
@@ -624,13 +596,6 @@ export default function App() {
         {currentPage === 'docs' && (
            <div className="space-y-8 max-w-4xl mx-auto pb-10">
               <div className="bg-slate-900 border border-slate-800 rounded-xl p-8">
-                 <h3 className="text-2xl font-bold text-white mb-4">{t.docs.physics_title}</h3>
-                 <p className="text-slate-400 mb-4">{t.docs.physics_desc}</p>
-                 <div className="bg-slate-950 p-4 rounded-lg border border-slate-800 font-mono text-sm text-blue-300">IF Current_Level &lt; Dead_Volume_Limit THEN Days_Left = 0</div>
-              </div>
-              
-              {/* Detailed Metrics Documentation Table */}
-              <div className="bg-slate-900 border border-slate-800 rounded-xl p-8">
                  <h3 className="text-2xl font-bold text-white mb-6">{t.docs.glossary_title}</h3>
                  <div className="grid grid-cols-1 gap-4">
                     {[
@@ -660,10 +625,10 @@ export default function App() {
               
               {/* STATUS BANNER */}
               {damDetail.status !== 'SAFE' && (
-                 <div className={`px-8 py-3 flex items-center gap-4 ${damDetail.status === 'CRITICAL' ? 'bg-red-900/80 border-b border-red-700' : 'bg-orange-900/80 border-b border-orange-700'} text-white rounded-t-2xl`}>
+                 <div className={`px-8 py-3 flex items-center gap-4 ${damDetail.status === 'CRITICAL' ? 'bg-red-900/80 border-b border-red-700' : damDetail.status === 'WARNING' ? 'bg-orange-900/80 border-b border-orange-700' : 'bg-yellow-900/80 border-b border-yellow-700'} text-white rounded-t-2xl`}>
                     <span className="text-2xl">⚠️</span>
                     <div className="flex-1 flex justify-between items-center">
-                       <span className="text-base font-bold">{damDetail.status === 'CRITICAL' ? t.modal.sys_crit : t.modal.warn} - {t.modal.alert_active}</span>
+                       <span className="text-base font-bold">{damDetail.status === 'CRITICAL' ? t.modal.sys_crit : damDetail.status === 'WARNING' ? t.modal.warn : 'Caution'} - {t.modal.alert_active}</span>
                        <span className="text-sm opacity-90">{damDetail.status === 'CRITICAL' ? `Only ${damDetail.days_to_crisis} days remaining.` : `Check levels.`}</span>
                     </div>
                  </div>
@@ -676,9 +641,25 @@ export default function App() {
                     <div className="relative group flex items-center justify-center">
                        <svg className="w-20 h-20 transform -rotate-90 drop-shadow-2xl">
                           <circle cx="40" cy="40" r="36" stroke="#1e293b" strokeWidth="6" fill="transparent" />
-                          <circle cx="40" cy="40" r="36" stroke={damDetail.status === 'CRITICAL' ? '#ef4444' : damDetail.status === 'WARNING' ? '#f97316' : '#3b82f6'} strokeWidth="6" fill="transparent" strokeDasharray={2 * Math.PI * 36} strokeDashoffset={2 * Math.PI * 36 * (1 - damDetail.occupancy_pct / 100)} strokeLinecap="round" className="transition-all duration-1000 ease-out" style={{ filter: `drop-shadow(0 0 6px ${damDetail.status === 'CRITICAL' ? '#ef4444' : '#3b82f6'})` }} />
+                          <circle cx="40" cy="40" r="36" 
+                              stroke={
+                                  damDetail.status === 'CRITICAL' ? '#ef4444' : 
+                                  damDetail.status === 'WARNING' ? '#f97316' : 
+                                  damDetail.status === 'CAUTION' ? '#eab308' : '#3b82f6'
+                              } 
+                              strokeWidth="6" fill="transparent" strokeDasharray={2 * Math.PI * 36} strokeDashoffset={2 * Math.PI * 36 * (1 - damDetail.occupancy_pct / 100)} strokeLinecap="round" className="transition-all duration-1000 ease-out" 
+                              style={{ filter: `drop-shadow(0 0 6px ${damDetail.status === 'CRITICAL' ? '#ef4444' : damDetail.status === 'WARNING' ? '#f97316' : damDetail.status === 'CAUTION' ? '#eab308' : '#3b82f6'})` }} 
+                          />
                        </svg>
-                       <div className="absolute inset-0 flex items-center justify-center"><span className={`text-2xl font-bold font-mono tracking-tighter ${damDetail.status === 'CRITICAL' ? 'text-red-400' : damDetail.status === 'WARNING' ? 'text-orange-400' : 'text-blue-100'}`}>{damDetail.occupancy_pct.toFixed(0)}%</span></div>
+                       <div className="absolute inset-0 flex items-center justify-center">
+                           <span className={`text-2xl font-bold font-mono tracking-tighter ${
+                               damDetail.status === 'CRITICAL' ? 'text-red-400' : 
+                               damDetail.status === 'WARNING' ? 'text-orange-400' : 
+                               damDetail.status === 'CAUTION' ? 'text-yellow-400' : 'text-blue-100'
+                           }`}>
+                               {damDetail.occupancy_pct.toFixed(0)}%
+                           </span>
+                       </div>
                     </div>
                     <button onClick={closeDamDetail} className="absolute right-0 text-slate-500 hover:text-white text-4xl leading-none transition-colors">&times;</button>
                  </div>
@@ -695,14 +676,37 @@ export default function App() {
                        {/* Scenarios Grid */}
                        <div className="grid grid-cols-2 gap-4">
                           {damDetail.recommendations.map((rec, i) => (
-                             <button key={i} onClick={() => calculateProjectedEffect(rec)} className={`text-left p-5 rounded-xl border transition-all hover:scale-[1.01] flex flex-col justify-between min-h-[120px] ${selectedRecommendation?.action === rec.action ? 'bg-blue-600 border-blue-500 ring-2 ring-blue-400/50' : 'bg-slate-800 border-slate-700 hover:border-blue-500'}`}>
-                                <div className="flex justify-between items-start">
-                                   <span className="font-bold text-white text-sm">{translateBackendText(rec.action, lang)}</span>
-                                   <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${rec.priority === 'CRITICAL' ? 'bg-red-900/50 text-red-400' : 'bg-blue-900/50 text-blue-400'}`}>{rec.priority}</span>
+                             <button key={i} onClick={() => calculateProjectedEffect(rec)} className={`text-left p-5 rounded-xl border transition-all hover:scale-[1.01] flex flex-col justify-between min-h-[140px] ${selectedRecommendation?.action === rec.action ? 'bg-blue-600/20 border-blue-500 ring-1 ring-blue-400' : 'bg-slate-800/40 border-slate-700 hover:bg-slate-800'}`}>
+                                <div>
+                                   <div className="flex justify-between items-start mb-1">
+                                      <h4 className="font-bold text-white text-sm tracking-tight">{rec.title || translateBackendText(rec.action, lang)}</h4>
+                                      <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded uppercase ${rec.priority === 'CRITICAL' ? 'bg-red-900/50 text-red-400' : 'bg-blue-900/50 text-blue-400'}`}>{rec.priority}</span>
+                                   </div>
+                                   <p className="text-[10px] text-slate-400 font-medium mb-3">{rec.sub_title}</p>
                                 </div>
-                                <div className="space-y-1.5 mt-2">
-                                   <div className="flex justify-between text-xs text-slate-300"><span className="opacity-70">{t.modal.life_ext}:</span> <span className="text-green-400 font-bold">+{rec.details.days_gained} {t.modal.days}</span></div>
-                                   <div className="flex justify-between text-xs text-slate-300"><span className="opacity-70">{t.modal.duration}:</span> <span>{translateBackendText(rec.details.duration, lang)}</span></div>
+                                
+                                <div className="space-y-1.5">
+                                   <div className="flex justify-between text-xs items-center">
+                                      <span className="text-slate-400">Kazanılan Süre:</span> 
+                                      <span className="text-green-400 font-bold">+{rec.details.days_gained} Gün</span>
+                                   </div>
+                                   <div className="flex justify-between text-xs items-center">
+                                      <span className="text-slate-400">Süre:</span> 
+                                      <span className="text-slate-200">{rec.details.duration}</span>
+                                   </div>
+                                   
+                                   {rec.details.risk_label && (
+                                      <div className="bg-orange-900/20 text-orange-500 text-[10px] px-2 py-1 rounded mt-2 font-bold flex items-center gap-1">
+                                         {rec.details.risk_label}
+                                      </div>
+                                   )}
+                                   
+                                   {rec.details.support_label && (
+                                      <div className="bg-blue-900/30 text-blue-300 text-[10px] px-2 py-1 rounded mt-2 font-bold flex justify-between">
+                                         <span>Support:</span>
+                                         <span>{rec.details.support_label}</span>
+                                      </div>
+                                   )}
                                 </div>
                              </button>
                           ))}

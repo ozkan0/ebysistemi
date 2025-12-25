@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Istanbul Water Management - Action Rules Engine v1.0
+Effective Dam Management System - Action Rules Engine v1.0
 
 Converts occupancy + predictions → actionable recommendations
 Calculates confidence/accuracy percentages
@@ -91,21 +91,18 @@ class ActionRulesEngine:
                 'status': 'SAFE' | 'WARNING' | 'CRITICAL'
             }
         """
-        # Calculate daily consumption
+        # Convert to daily consumption from monthly prediction
         daily_consumption = predicted_monthly_consumption / 30
         
         # Calculate available water (percentage points)
-        # At 0%, total depletion. Need buffer of 5% for emergency.
         safe_margin_pct = 5.0
         available_pct = max(occupancy_pct - safe_margin_pct, 0)
         
         # Account for incoming precipitation (improves situation)
-        net_available_pct = available_pct + (precipitation_forecast * 0.5)  # 50% efficiency
+        net_available_pct = available_pct + (precipitation_forecast * 0.5) # 50% efficiency
         
         # Estimate daily loss as percentage of capacity
-        # If consuming predicted amount and it's X% of typical monthly consumption,
-        # then daily % = X% / 30 days
-        daily_loss_pct = (daily_consumption / 30) * 0.001  # Simplified
+        daily_loss_pct = (daily_consumption / 30) * 0.001
         
         # Days until crisis = available % / daily loss %
         if daily_loss_pct > 0:
@@ -123,13 +120,12 @@ class ActionRulesEngine:
         else:
             forecast_confidence = 85  # Higher confidence in dry forecast
         
-        # Combined confidence
         confidence = (model_confidence + forecast_confidence) / 2
         
         # Status determination
         if occupancy_pct < 15:
             status = 'CRITICAL'
-            confidence = min(confidence, 95)  # High certainty at critical level
+            confidence = min(confidence, 95)
         elif occupancy_pct < 30:
             status = 'WARNING'
         elif occupancy_pct < 50:
@@ -185,7 +181,7 @@ class ActionRulesEngine:
                     'action': 'non_essential_ban',
                     'description': 'Ban non-essential water use (car wash, gardens)',
                     'impact': '12% consumption reduction',
-                    'confidence': base_confidence - 5,  # Lower confidence in compliance
+                    'confidence': base_confidence - 5,
                     'urgency': 'IMMEDIATE',
                     'priority': 3
                 },
@@ -354,7 +350,7 @@ if __name__ == "__main__":
     )
     
     print("╔════════════════════════════════════════════════════════════════════╗")
-    print("║  ISTANBUL WATER MANAGEMENT - ACTION RULES ENGINE v1.0              ║")
+    print("║  EFFECTIVE DAM MANAGEMENT SYSTEM - ACTION RULES ENGINE v1.0        ║")
     print("║  Decision Support via Occupancy + Consumption Analysis             ║")
     print("╚════════════════════════════════════════════════════════════════════╝")
     

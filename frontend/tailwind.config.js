@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // Override default 'sans' with JetBrains Mono
         sans: ['"JetBrains Mono"', 'monospace', 'ui-sans-serif', 'system-ui'],
       },
       colors: {

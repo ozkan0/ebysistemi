@@ -1,9 +1,14 @@
 # EBYS - Efektif Baraj Yönetim Sistemi / Effective Dam Management System
 
 **Hibrit Yapay Zeka (Random Forest + Fizik Motoru) destekli Karar Destek Sistemi.**
-**---Çeviriler hatalı olabilir. Ayrıca gerçek hayatta, ilgili yönetim sistemine tam entegre edilmesi için yeterince hazır değildir.---**
+
+-Çeviriler hatalı olabilir. Ayrıca gerçek hayatta, ilgili yönetim sistemine tam entegre edilmesi için yeterince hazır değildir.
+
 **A Decision Support System powered by Hybrid Machine Learning (Random Forest + Physics Engine).**
-**---Translations may be inaccurate. Furthermore, in real life, it is not sufficiently prepared for full integration into the relevant management system.---**
+
+-Translations may be inaccurate. Furthermore, in real life, it is not sufficiently prepared for full integration into the relevant management system.
+
+
 
 ---
 
@@ -13,7 +18,7 @@
 ---
 
 
-## 🇹🇷 Hızlı Başlangıç Kılavuzu (Türkçe)
+## Hızlı Başlangıç Kılavuzu (Türkçe)
 
 ### 1. Gereksinimler
 *   **Node.js** & **npm** (Arayüz için)
